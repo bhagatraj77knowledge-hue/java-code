@@ -11,8 +11,8 @@
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family: 'Inter', sans-serif;
-      background: #f6f5f3;
-      color: #1e1e2a;
+      background: #f4f7fc;
+      color: #0b1a2e;
       line-height:1.5;
       -webkit-font-smoothing: antialiased;
     }
@@ -22,20 +22,20 @@
     input { font-family:inherit; }
 
     :root {
-      --bg: #f6f5f3;
+      --bg: #f4f7fc;
       --card: #ffffff;
-      --primary: #1e1e2a;
-      --accent: #c44536;
-      --accent-light: #fce4de;
-      --accent-dark: #a83224;
-      --muted: #6b6b7a;
-      --muted-light: #a8a8b8;
-      --surface: #eeedeb;
-      --success: #2a9d8f;
+      --primary: #0b1a2e;
+      --accent: #1a6bc4;
+      --accent-light: #d4e2f7;
+      --accent-dark: #0f4a8a;
+      --muted: #4a5a72;
+      --muted-light: #8a9bb0;
+      --surface: #e8edf4;
+      --success: #1e7e6b;
       --radius: 20px;
       --radius-sm: 12px;
-      --shadow: 0 8px 28px rgba(0,0,0,0.04);
-      --shadow-hover: 0 20px 48px rgba(0,0,0,0.08);
+      --shadow: 0 8px 28px rgba(10,30,60,0.06);
+      --shadow-hover: 0 20px 48px rgba(10,30,60,0.10);
       --transition: 0.2s cubic-bezier(0.2,0,0,1);
       --container: 1280px;
     }
@@ -52,8 +52,8 @@
     .btn-primary { background:var(--accent); color:#fff; border-color:var(--accent); }
     .btn-primary:hover { background:var(--accent-dark); border-color:var(--accent-dark); transform:scale(0.97); }
     .btn-secondary { background:var(--primary); color:#fff; border-color:var(--primary); }
-    .btn-secondary:hover { background:#2b2b40; transform:scale(0.97); }
-    .btn-outline { background:transparent; color:var(--primary); border-color:rgba(30,30,42,0.15); }
+    .btn-secondary:hover { background:#1a2a40; transform:scale(0.97); }
+    .btn-outline { background:transparent; color:var(--primary); border-color:rgba(11,26,46,0.15); }
     .btn-outline:hover { background:var(--primary); color:#fff; border-color:var(--primary); }
     .btn-ghost { background:rgba(255,255,255,0.1); color:#fff; border-color:rgba(255,255,255,0.2); }
     .btn-ghost:hover { background:rgba(255,255,255,0.2); }
@@ -63,7 +63,7 @@
     header {
       position:sticky; top:0; z-index:100;
       background:rgba(255,255,255,0.88); backdrop-filter:blur(18px);
-      border-bottom:1px solid rgba(0,0,0,0.03);
+      border-bottom:1px solid rgba(10,30,60,0.04);
     }
     .header-inner {
       display:flex; align-items:center; justify-content:space-between; gap:12px;
@@ -114,7 +114,7 @@
     }
     .search-wrap:focus-within {
       border-color:var(--accent); background:#fff;
-      box-shadow:0 0 0 6px rgba(196,69,54,0.08);
+      box-shadow:0 0 0 6px rgba(26,107,196,0.10);
     }
     .search-wrap input {
       border:0; background:transparent; outline:none;
@@ -146,17 +146,17 @@
       min-height:440px; padding:48px 0;
       border-radius:var(--radius); overflow:hidden;
       margin:16px 24px 0;
-      background:linear-gradient(145deg, #1a1a28 0%, #2d2d44 100%);
+      background:linear-gradient(145deg, #0b1a2e 0%, #1a3550 100%);
     }
     .hero::before {
       content:''; position:absolute; inset:0;
       background:url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      opacity:0.3; z-index:0;
+      opacity:0.2; z-index:0;
     }
     .hero .container { position:relative; z-index:1; }
     .hero .badge {
-      display:inline-block; background:rgba(196,69,54,0.2);
-      color:var(--accent); padding:4px 18px; border-radius:999px;
+      display:inline-block; background:rgba(26,107,196,0.2);
+      color:#6a9fd8; padding:4px 18px; border-radius:999px;
       font-weight:600; font-size:13px; letter-spacing:0.3px; margin-bottom:14px;
     }
     .hero h1 {
@@ -308,7 +308,7 @@
 
     /* ===== newsletter ===== */
     .newsletter-wrap {
-      background:linear-gradient(135deg, #1e1e2a, #2d2d44);
+      background:linear-gradient(135deg, #0b1a2e, #1a3550);
       border-radius:var(--radius); padding:44px 52px;
       color:#fff; display:flex; align-items:center;
       justify-content:space-between; gap:32px; flex-wrap:wrap;
@@ -328,7 +328,7 @@
     #newsletterMsg { margin-top:10px; font-size:14px; opacity:0.9; width:100%; }
 
     /* ===== footer ===== */
-    footer { margin-top:8px; padding:40px 0 28px; border-top:1px solid rgba(0,0,0,0.03); }
+    footer { margin-top:8px; padding:40px 0 28px; border-top:1px solid rgba(10,30,60,0.04); }
     .footer-grid {
       display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:28px;
     }
@@ -345,7 +345,7 @@
     .footer-grid .col ul { list-style:none; display:flex; flex-direction:column; gap:6px; }
     .footer-grid .col ul li a { color:var(--muted); font-size:14px; transition:var(--transition); }
     .footer-grid .col ul li a:hover { color:var(--accent); }
-    .footer-bottom { text-align:center; padding-top:16px; border-top:1px solid rgba(0,0,0,0.03); color:var(--muted-light); font-size:13px; }
+    .footer-bottom { text-align:center; padding-top:16px; border-top:1px solid rgba(10,30,60,0.04); color:var(--muted-light); font-size:13px; }
 
     /* ===== responsive ===== */
     @media (max-width:1200px) {
@@ -545,4 +545,4 @@
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube
+            <a href="#" aria-label="YouTube"><i class="fab fa
